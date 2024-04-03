@@ -1,2 +1,2 @@
 # KalabawFoods
-KalabawFoods
+KalabawFoods demo app.
