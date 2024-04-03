@@ -1,0 +1,6 @@
+services:
+  kalabawfoodsfrontend:
+    build: .
+    ports:
+      - "80:8080"
+      - "5006:8080"
