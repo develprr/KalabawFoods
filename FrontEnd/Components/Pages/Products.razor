@@ -43,24 +43,19 @@ else
         await Task.Delay(500);
 
         products = new List<Product> {
-            new Product()
-            {
-                Title = "Bahay Kubo Sausage",
-                Price = 7.99,
-                Count = 41
-            },
-            new Product()
-            {
-                Title = "Canned Kalabaw Liver",
-                Price = 3.59,
-                Count = 13
-            },
-            new Product()
-            {
-                Title = "Horn Powder",
-                Price = 69.99,
-                Count = 9
-            }        
+            new Product(
+                "Bahay Kubo Sausage",
+               7.99,
+               41),
+            new Product(
+                "Canned Kalabaw Liver",
+                3.59,
+                13
+            ),
+            new Product("Horn Powder",
+                69.99,
+                9
+            )
         };
     }
 
@@ -69,5 +64,12 @@ else
         public string Title { get; init; }
         public double Price  { get; init; }
         public int Count { get; init; }
+
+        public Product(string title, double price, int count)
+        {
+            Title = title;
+            Price = price;
+            Count = count;
+        }
     }
 }
