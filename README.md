@@ -3,7 +3,7 @@
 This is a demo app to showcase how to containerize a Blazor-based
 front end application. The user interface is an single page application 
 online store implementation of an imaginary start-up company "Kalabaw Foods",
-which refines and sells exotic meat products.
+which imports, refines and sells exotic meat products.
 
 ## Credits
 The Docker configuration in this example is heavily influenced by the following examples:
