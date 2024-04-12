@@ -1,0 +1,50 @@
+﻿@page "/products/list"
+@attribute [StreamRendering]
+@using Microsoft.EntityFrameworkCore;
+@using KalabawFoods.FrontEnd.Data.Models;
+@using KalabawFoods.FrontEnd.Data;
+@inject KalabawFoodsDbContext Context;
+<PageTitle>Products</PageTitle>
+
+<h1>Products</h1>
+
+<p>Kalabaw Foods Online Store Products.</p>
+
+@if (_products == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Category</th>
+                <th>Price</th>
+                <th>In Stock</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var product in _products)
+            {
+                <tr>
+                    <td>@product.Name</td>
+                    <td>@product.Category?.Name</td>
+                    <td>@product.Price</td>
+                    <td>@product.Count</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<Product>? _products;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _products = await Context.Products.Include(product => product.Category).ToListAsync();  
+    }
+    
+}  

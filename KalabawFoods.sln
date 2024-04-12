@@ -2,7 +2,7 @@
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.0.0
 MinimumVisualStudioVersion = 16.0.0.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KalabawFoodsFrontEnd", "KalabawFoodsFrontEnd\KalabawFoodsFrontEnd.csproj", "{87F3C11B-487D-47A0-B557-711C72781662}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KalabawFoods.FrontEnd", "KalabawFoods.FrontEnd\KalabawFoods.FrontEnd.csproj", "{87F3C11B-487D-47A0-B557-711C72781662}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
