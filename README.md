@@ -32,5 +32,5 @@ docker-compose up -d
 
 Then, navigate to the containerized KalabawFoods Blazor app with your browser:
 ```
-localhost:5006
+http://localhost:5006
 ```

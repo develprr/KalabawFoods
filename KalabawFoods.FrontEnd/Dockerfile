@@ -15,8 +15,6 @@ FROM restore AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 WORKDIR /src/KalabawFoods.FrontEnd
-ENTRYPOINT dotnet-ef database update --project src/KalabawFoods.FrontEnd/ --startup-project src/KalabawFoods.FrontEnd
-
 RUN dotnet build KalabawFoods.FrontEnd.csproj -c $BUILD_CONFIGURATION -o /app/build
 
 FROM build AS publish
