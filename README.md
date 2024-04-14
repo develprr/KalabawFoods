@@ -24,14 +24,13 @@ No restricted, protected or proprietary sources were used to create this code ex
 * https://jasonwatmore.com/post/2022/06/23/net-6-connect-to-postgresql-database-with-entity-framework-core
 
 ## Usage 
-To locally build and run the example app outside the Docker container:
-```bash
-cd KalabawFoods.FrontEnd
-dotnet build
-dotnet run
-```
 
 To run the application in Docker container:
 ```
 docker-compose up -d
+```
+
+Then, navigate to the containerized KalabawFoods Blazor app with your browser:
+```
+localhost:5006
 ```
