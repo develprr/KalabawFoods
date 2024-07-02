@@ -34,3 +34,11 @@ Then, navigate to the containerized KalabawFoods Blazor app with your browser:
 ```
 http://localhost:5006
 ```
+
+## Development 
+
+To build the front end app, run at project's root:
+```
+cd KalabawFoods.FrontEnd
+dotnet build
+```
