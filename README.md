@@ -27,7 +27,7 @@ No restricted, protected or proprietary sources were used to create this code ex
 
 To run the application in Docker container:
 ```
-docker-compose up -d
+docker compose up -d
 ```
 
 Then, navigate to the containerized KalabawFoods Blazor app with your browser:
