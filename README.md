@@ -23,6 +23,12 @@ No restricted, protected or proprietary sources were used to create this code ex
 * https://ubuntu.com/server/docs/databases-postgresql
 * https://jasonwatmore.com/post/2022/06/23/net-6-connect-to-postgresql-database-with-entity-framework-core
 
+
+## Requirements
+
+* Docker engine - to install the Docker engine, read https://docs.docker.com/engine/install/ubuntu/ 
+* .NET SDK - read https://learn.microsoft.com/en-us/dotnet/core/install/linux-ubuntu-install?tabs=dotnet8&pivots=os-linux-ubuntu-2404
+
 ## Usage 
 
 To run the application in Docker container:
@@ -30,12 +36,14 @@ To run the application in Docker container:
 docker compose up -d
 ```
 
+
 Then, navigate to the containerized KalabawFoods Blazor app with your browser:
 ```
 http://localhost:5006
 ```
 
 ## Development 
+
 
 To build the front end app, run at project's root:
 ```
