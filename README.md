@@ -85,7 +85,7 @@ dotnet ef migrations list
 
 To deploy the application to Azure as a containerized app, follow these steps.
 
-## 1. Create resource group
+## 1. Create a resource group
 
 First create a resourcce group for your application with the following command.
 Change the resource group's name to better fit your own scenario. Likewise, change the location
@@ -94,10 +94,16 @@ if you are not in North Europe:
 az group create --name my-food-business-resource-group --location northeurope
 ```
 
-## 2. Create registry
+## 2. Create a registry
 
 Create a registry for your resource group:
 ```
 az acr create --name myfoodbusinessregistry --resource-group my-food-business-resource-group --sku basic --admin-enabled true
 ```
 
+## 3. Deploy the image
+
+The following command deploys your container app's image to Azure cloud:
+```
+az acr build --file KalabawFoods.FrontEnd/Dockerfile --registry myfoodbusinessregistry --image myfoodbusiness-image . 
+```
