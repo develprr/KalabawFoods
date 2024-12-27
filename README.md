@@ -44,23 +44,36 @@ http://localhost:5006
 
 ## Development 
 
+### Build the front end app
 
 To build the front end app, run at project's root:
 ```
 cd KalabawFoods.FrontEnd
 dotnet build
+
+### Run the front end app
+In `KalabawFoods.FrontEnd` directory, type:
 ```
+dotnet run
+```
+The command starts the front end app outside the container, yet relying on the database
+which resides inside the container. The database container must be up and running for this command to succeed.
+To verify whether the database container is up and running, type:
+```
+docker ps
+```
+
 ## Migrations
 
 To manage migrations, navigate to project's root with your favorite terminal. From project's root,
 navigate to front end app:
-```zsh
+```
 cd KalabawFoods.Frontend
 ```
 
 ### Listing migrations
 in the front end app, type:
 
-```zsh
+```
 dotnet ef migrations list
 ```
