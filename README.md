@@ -72,6 +72,7 @@ cd KalabawFoods.Frontend
 ```
 
 ### Listing migrations
+
 in the front end app, type:
 
 ```
