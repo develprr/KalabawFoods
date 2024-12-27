@@ -59,6 +59,7 @@ dotnet run
 The command starts the front end app outside the container, yet relying on the database
 which resides inside the container. The database container must be up and running for this command to succeed.
 To verify whether the database container is up and running, type:
+
 ```
 docker ps
 ```
