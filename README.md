@@ -100,8 +100,14 @@ Create a registry for your resource group:
 ```
 az acr create --name myfoodbusinessregistry --resource-group my-food-business-resource-group --sku basic --admin-enabled true
 ```
+## 3. Create a service plan
 
-## 3. Deploy the image
+Create a service plan for your application. To minimize costs, I recommend to start with the basic plan (B1):
+```
+az appservice plan create --name my-food-business-service-plan --resource-group my-food-business-resource-group --sku B1 --is-linux
+```
+
+## 4. Deploy the image
 
 The following command deploys your container app's image to Azure cloud:
 ```
