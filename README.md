@@ -50,3 +50,17 @@ To build the front end app, run at project's root:
 cd KalabawFoods.FrontEnd
 dotnet build
 ```
+## Migrations
+
+To manage migrations, navigate to project's root with your favorite terminal. From project's root,
+navigate to front end app:
+```zsh
+cd KalabawFoods.Frontend
+```
+
+### Listing migrations
+in the front end app, type:
+
+```zsh
+dotnet ef migrations list
+```
