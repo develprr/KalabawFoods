@@ -50,6 +50,7 @@ To build the front end app, run at project's root:
 ```
 cd KalabawFoods.FrontEnd
 dotnet build
+```
 
 ### Run the front end app
 In `KalabawFoods.FrontEnd` directory, type:
