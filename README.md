@@ -111,5 +111,13 @@ az appservice plan create --name my-food-business-service-plan --resource-group 
 
 The following command deploys your container app's image to Azure cloud:
 ```
-az acr build --file KalabawFoods.FrontEnd/Dockerfile --registry myfoodbusinessregistry --image myfoodbusiness-image . 
+az acr build --file KalabawFoods.FrontEnd/Dockerfile --registry myfoodbusinessregistry --image myfoodbusiness-image 
+```
+
+## 5. Deploy the web app
+
+Finally, deploy the actual web application to Azure:
+```
+az webapp create -g my-food-business-resource-group -n myfoodbusiness -p my-food-business-service-plan --deployment-container-image-name myfoodbusinessregistry.azurecr.io/myfoodbusiness-image:latest
+
 ```
